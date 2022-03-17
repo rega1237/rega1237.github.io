@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8,23 +7,23 @@
   padding: 0;
   }
 
-body{
+body {
   font-family: 'Inter', sans-serif;
 }
 
-main{
+main {
     width: 375px;
     margin: 0 auto;
 }
 
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 0 20px 0;
 }
 
-header h3{
+header h3 {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -33,19 +32,19 @@ header h3{
   margin-left: 24px;
 }
 
-.nav-bar div{
+.nav-bar div {
   height: 2px;
   background-color: #050505;
   margin: 5px;
   border-radius: 25px;
 }
 
-.nav-bar{
+.nav-bar {
   width: 30px;
   margin-right: 36px;  
 }
 
-.presentation{
+.presentation {
   background-image: url("images/header-illsutration-mobile@2x.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -53,7 +52,7 @@ header h3{
   flex-direction: column;
 }
 
-.presentation h2{
+.presentation h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -61,16 +60,16 @@ header h3{
   text-align: center;
 }
   
-.introduction{
+.introduction {
   color: #172B4D;
   padding-top: 60px;
 }
   
-.introduction-second-part{
+.introduction-second-part {
   color: #40bb82;
 }
   
-.supporting-text{
+.supporting-text {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -79,23 +78,23 @@ header h3{
   margin: 54px 24px 0 24px;
 }
 
-.icon-social{
+.icon-social {
   display: flex;
   justify-content: center;
   margin-top: 56px;
 }
   
-.social{
+.social {
   padding: 0px 10px 0px 10px;
 }
 
-.arrow-circle{
+.arrow-circle {
   display: inline-block;
   text-align: center;
   margin-top: 55px;
 }
   
-.arrow{
+.arrow {
   border: 1px solid #DFE1E6;
   border-radius: 32px;
   padding: 8px;
