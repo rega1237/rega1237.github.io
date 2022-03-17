@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  }
+}
 
 body {
   font-family: 'Inter', sans-serif;
@@ -60,14 +60,14 @@ header h3 {
 }
 
 .introduction {
-  color: #172B4d;
+  color: #172b4d;
   padding-top: 60px;
 }
- 
+
 .introduction-second-part {
   color: #40bb82;
 }
- 
+
 .supporting-text {
   font-style: normal;
   font-weight: 400;
@@ -82,9 +82,10 @@ header h3 {
   justify-content: center;
   margin-top: 56px;
 }
- 
+
 .social {
-  padding: 0px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .arrow-circle {
