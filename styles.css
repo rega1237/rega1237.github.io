@@ -88,3 +88,15 @@ header h3{
 .social{
   padding: 0px 10px 0px 10px;
 }
+
+.arrow-circle{
+  display: inline-block;
+  text-align: center;
+  margin-top: 55px;
+}
+  
+.arrow{
+  border: 1px solid #DFE1E6;
+  border-radius: 32px;
+  padding: 8px;
+}
