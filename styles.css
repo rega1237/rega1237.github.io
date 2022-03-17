@@ -44,3 +44,11 @@ header h3{
   width: 30px;
   margin-right: 36px;  
 }
+
+.presentation{
+    background-image: url("images/header-illsutration-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+}
