@@ -52,8 +52,8 @@ header a {
   flex-direction: column;
 }
 
-.presentation h1, 
-h2 {
+.introduction,
+.introduction-second-part {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
