@@ -52,7 +52,8 @@ header a {
   flex-direction: column;
 }
 
-.presentation h1, h2 {
+.presentation h1, 
+h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -87,7 +88,7 @@ header a {
 
 .social {
   padding-left: 10px;
-  padding-right: 10px;  
+  padding-right: 10px;
 }
 
 .arrow-circle {
