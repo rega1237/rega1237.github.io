@@ -78,3 +78,13 @@ header h3{
   text-align: center;
   margin: 54px 24px 0 24px;
 }
+
+.icon-social{
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+}
+  
+.social{
+  padding: 0px 10px 0px 10px;
+}
