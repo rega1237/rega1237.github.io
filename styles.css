@@ -1,0 +1,104 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  width: 375px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+}
+
+header a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #28352f;
+  margin-left: 24px;
+  text-decoration: none;
+}
+
+.nav-bar div {
+  height: 2px;
+  background-color: #050505;
+  margin: 5px;
+  border-radius: 25px;
+}
+
+.nav-bar {
+  width: 30px;
+  margin-right: 36px;
+}
+
+.presentation {
+  background-image: url("images/header-illsutration-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction,
+.introduction-second-part {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.introduction {
+  color: #172b4d;
+  padding-top: 60px;
+}
+
+.introduction-second-part {
+  color: #40bb82;
+}
+
+.supporting-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin: 54px 24px 0 24px;
+}
+
+.icon-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+  list-style: none;
+}
+
+.social {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.arrow-circle {
+  display: inline-block;
+  text-align: center;
+  margin-top: 55px;
+}
+
+.arrow {
+  border: 1px solid #dfe1e6;
+  border-radius: 32px;
+  padding: 8px;
+}
