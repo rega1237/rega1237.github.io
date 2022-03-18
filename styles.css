@@ -143,3 +143,55 @@ header a {
 .card1 {
   margin-top: 62px;
 }
+
+.image-card-holder {
+  height: 252px;
+  background-color: #ebf0ee;
+}
+
+.text-work-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.card-tags {
+  margin-top: 16px;
+}
+
+.card-tags ul {
+  display: flex;
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  justify-content: space-around;
+}
+
+.tag-element {
+  padding: 8px 12px;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+}
+
+.tag-element:hover {
+  background-color: #36b37f;
+}
+
+.see-project-btn {
+  width: 122px;
+  background-color: #36b37f;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 29px auto 24px auto;
+  border-radius: 4px;
+}
