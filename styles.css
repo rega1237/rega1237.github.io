@@ -304,3 +304,25 @@ header a {
 .tag-element-about:hover {
   background-color: #555;
 }
+
+.card-about-two,
+.card-about-three {
+  margin-top: 25px;
+}
+
+.about-other-tags{
+  margin-top: 24px;
+}
+
+.about-other-tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  justify-content: center;
+  row-gap: 8px;
+  column-gap: 8px;
+}
