@@ -243,3 +243,64 @@ header a {
   margin: 29px auto 24px auto;
   border-radius: 4px;
 }
+
+.about-cards {
+  display: grid;
+  grid-template-columns: 327px;
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  margin-top: 65px;
+}
+
+.about-cards img {
+  margin-top: 20px;
+}
+
+.about-cards h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  margin-top: 20px;
+}
+
+.card-about {
+  padding-bottom: 72px;
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+}
+
+.about-languages-tags {
+  margin-top: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.about-languages-tags ul {
+  display: flex;
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  justify-content: space-around;
+}
+
+.tag-element-about {
+  padding: 12px;
+  background-color: #fff;
+  color: #36b37e;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.tag-element-about:hover {
+  background-color: #555;
+}
