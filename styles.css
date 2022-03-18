@@ -132,3 +132,14 @@ header a {
   background-color: #40bb82;
   text-align: center;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.card1 {
+  margin-top: 62px;
+}
