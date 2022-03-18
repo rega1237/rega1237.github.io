@@ -144,6 +144,14 @@ header a {
   margin-top: 62px;
 }
 
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  margin-top: 24px;
+}
+
 .image-card-holder {
   height: 252px;
   background-color: #ebf0ee;
