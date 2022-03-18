@@ -4,6 +4,11 @@
 
 - ![screenshot](images/toolbar.png)
 - ![screenshot](images/headline.png)
+- ![screenshot](images/recent-projects.png)
+- ![screenshot](images/about-me.png)
+- ![screenshot](images/languages-card.png)
+- ![screenshot](images/framework-card.png)
+- ![screenshot](images/skills-card.png)
 
 ## Built With
 
@@ -20,8 +25,9 @@ To get a local copy up and running follow these simple steps:
 ## :blue_book: Learning Objectives
 
 - Understand how to parse a Figma design to create a UI.
-- Flexbox to place elements in the page.
+- Flexbox and Grid to place elements in the page.
 - Build the beggining of a personal portafolio
+- Build the recents project and about me section
 - Use images and backgrounds to enhance the look of the website.
 - Make it look as close as possible to the design presented in figma
 
