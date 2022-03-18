@@ -204,6 +204,15 @@ header a {
   border-radius: 4px;
 }
 
+.see-project-btn:hover{
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.see-project-btn:active{
+  background-color: #007443;
+  color: #fff;
+}
+
 .about-template {
   padding-top: 68px;
   display: flex;
@@ -242,6 +251,15 @@ header a {
   padding: 12px;
   margin: 29px auto 24px auto;
   border-radius: 4px;
+}
+
+.about-template button:hover{
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.about-template button:active{
+  background-color: #007443;
+  color: #fff;
 }
 
 .about-cards {
