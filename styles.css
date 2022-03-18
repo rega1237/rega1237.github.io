@@ -102,3 +102,33 @@ header a {
   border-radius: 32px;
   padding: 8px;
 }
+
+.recent-projects {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 327px;
+  grid-template-rows: repeat(7, auto);
+  justify-content: center;
+}
+
+.recent-work-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.recent-work-title h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.green-line {
+  margin-top: 24px;
+  width: 48px;
+  height: 4px;
+  background-color: #40bb82;
+  text-align: center;
+}
