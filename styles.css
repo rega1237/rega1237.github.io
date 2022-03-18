@@ -204,11 +204,11 @@ header a {
   border-radius: 4px;
 }
 
-.see-project-btn:hover{
-  box-shadow: 5px 10px 8px #888888;
+.see-project-btn:hover {
+  box-shadow: 5px 10px 8px #888;
 }
 
-.see-project-btn:active{
+.see-project-btn:active {
   background-color: #007443;
   color: #fff;
 }
@@ -253,11 +253,11 @@ header a {
   border-radius: 4px;
 }
 
-.about-template button:hover{
-  box-shadow: 5px 10px 8px #888888;
+.about-template button:hover {
+  box-shadow: 5px 10px 8px #888;
 }
 
-.about-template button:active{
+.about-template button:active {
   background-color: #007443;
   color: #fff;
 }
