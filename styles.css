@@ -344,6 +344,14 @@ header a {
   row-gap: 8px;
   column-gap: 8px;
 }
+
+.form-contact {
+  background-image: url(images/form-frame.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: right;
+  background-position-y: 730px;
+}
 .text-contact {
   font-style: normal;
   font-weight: 700;
@@ -394,4 +402,36 @@ header a {
   padding: 12px;
   margin: 24px 94px;
   border-radius: 4px;
+}
+
+.contact-btn:hover {
+  box-shadow: 5px 10px 8px #888;
+}
+
+.contact-btn:active {
+  background-color: #007443;
+  color: #fff;
+}
+
+#footer-icons {
+  margin-top: 30px;
+}
+
+.form-contact p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 19px;
+  padding-bottom: 100px;
+}
+
+.form-contact div {
+  height: 5px;
+  background-color: #050505;
+  margin: 0 auto;
+  border-radius: 25px;
+  width: 100px;
+  margin-bottom: 10px;
 }
