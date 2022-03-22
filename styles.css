@@ -214,17 +214,17 @@ header a {
 }
 
 .about-template {
-  padding-top: 68px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: 
+  background-image:
     url("images/about-me-up.png"),
     url("images/about-me-bot.png");
   background-repeat: no-repeat;
   background-size: auto, auto;
   background-position-x: right;
   background-position-y: 20px;
+  padding-top: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-title {
