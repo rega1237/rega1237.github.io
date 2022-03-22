@@ -218,9 +218,9 @@ header a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image:
-    url("images/about-me-up.png"),
-    url("images/about-me-bot.png");    
+  background-image: url("images/about-me-up.png"),
+    url("images/about-me-bot.png");
+    
   background-repeat: no-repeat;
   background-size: auto, auto;
   background-position-x: right;
