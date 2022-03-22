@@ -195,14 +195,14 @@
             <form id="template-form" action="https://formspree.io/f/template-form" method="post">
                 <ul class="input-form">
                     <li>
-                        <input type="text" name="Full_Name" placeholder="Full name" minlength="30" required />
+                        <input type="text" name="Full_Name" placeholder="Full name" maxlength="30" required />
                     </li>
                     <li>
                         <input type="email" name="email" placeholder="Email adress" required />
                     </li>
                     <li>
                         <textarea name="resume_text" id="textarea" cols="30" rows="5" placeholder="Enter text here"
-                            minlength="500" required></textarea>
+                            maxlength="500" required></textarea>
                     </li>
                     <li>
                         <button type="submit" class="contact-btn">Get in touch</button>
