@@ -2,7 +2,7 @@
 
 > In this project, We build the contact form for my template. My goal here was to set up and customize the form.
 
-- ![screenshot](images/form-contact-template.png)
+- ![screenshot](images/form-contact.png)
 
 ## Built With
 
