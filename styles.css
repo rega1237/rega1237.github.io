@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 main {
@@ -218,7 +218,8 @@ header a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("images/about-me-up.png"), url("images/about-me-bot.png");
+  background-image: url("images/about-me-up.png"),
+    url("images/about-me-bot.png");
   background-repeat: no-repeat;
   background-size: auto, auto;
   background-position-x: right;
@@ -352,6 +353,7 @@ header a {
   background-position-x: right;
   background-position-y: 730px;
 }
+
 .text-contact {
   font-style: normal;
   font-weight: 700;
@@ -380,6 +382,7 @@ header a {
   margin-top: 24px;
   padding: 15px 16px;
 }
+
 .input-form textarea {
   width: 100%;
   font-style: normal;
@@ -392,6 +395,7 @@ header a {
   box-sizing: border-box;
   border-radius: 4px;
 }
+
 .contact-btn {
   background-color: #36b37f;
   font-style: normal;
