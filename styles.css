@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 main {
@@ -214,15 +214,17 @@ header a {
 }
 
 .about-template {
-  padding-top: 68px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url("images/about-me-up.png"), url("images/about-me-bot.png");
+  background-image:
+    url("images/about-me-up.png"),
+    url("images/about-me-bot.png");
   background-repeat: no-repeat;
   background-size: auto, auto;
   background-position-x: right;
   background-position-y: 20px;
+  padding-top: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-title {
@@ -343,4 +345,98 @@ header a {
   justify-content: center;
   row-gap: 8px;
   column-gap: 8px;
+}
+
+.form-contact {
+  background-image: url(images/form-frame.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: right;
+  background-position-y: 730px;
+}
+
+.text-contact {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin: 60px 24px 30px 24px;
+}
+
+.form-contact form {
+  margin: 0 auto;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-form {
+  list-style: none;
+}
+
+.input-form input {
+  width: 100%;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  margin-top: 24px;
+  padding: 15px 16px;
+}
+
+.input-form textarea {
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 24px;
+  padding: 10px;
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.contact-btn {
+  background-color: #36b37f;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffff;
+  padding: 12px;
+  margin: 24px 94px;
+  border-radius: 4px;
+}
+
+.contact-btn:hover {
+  box-shadow: 5px 10px 8px #888;
+}
+
+.contact-btn:active {
+  background-color: #007443;
+  color: #fff;
+}
+
+#footer-icons {
+  margin-top: 30px;
+}
+
+.form-contact p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 19px;
+  padding-bottom: 100px;
+}
+
+.form-contact div {
+  height: 5px;
+  background-color: #050505;
+  margin: 0 auto;
+  border-radius: 25px;
+  width: 100px;
+  margin-bottom: 10px;
 }

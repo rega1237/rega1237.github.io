@@ -1,14 +1,8 @@
-# Portfolio-setup-and-mobile-version-skeleton
+# Contact form pair program
 
-> In this project, I start to build the skeleton of my portafolio. My goal here was to set up and customize the tool bar and the headline section.
+> In this project, We build the contact form for my template. My goal here was to set up and customize the form.
 
-- ![screenshot](images/toolbar.png)
-- ![screenshot](images/headline.png)
-- ![screenshot](images/recent-projects.png)
-- ![screenshot](images/about-me.png)
-- ![screenshot](images/languages-card.png)
-- ![screenshot](images/framework-card.png)
-- ![screenshot](images/skills-card.png)
+- ![screenshot](images/form-contact.png)
 
 ## Built With
 
@@ -26,8 +20,7 @@ To get a local copy up and running follow these simple steps:
 
 - Understand how to parse a Figma design to create a UI.
 - Flexbox and Grid to place elements in the page.
-- Build the beggining of a personal portafolio
-- Build the recents project and about me section
+- Build a form for the personal portafolio
 - Use images and backgrounds to enhance the look of the website.
 - Make it look as close as possible to the design presented in figma
 
@@ -36,6 +29,10 @@ To get a local copy up and running follow these simple steps:
 👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/rega1237)
+
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/saifullah767)
 
 ## 🤝 Contributing
 
