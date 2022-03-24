@@ -39,6 +39,8 @@ main {
   font-size: 20px;
   text-align: center;
   margin: 54px 24px 0 24px;
+  color: #42526e;
+
 }
 
 .icon-social {
@@ -70,6 +72,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: #172b4d;
 }
 
 .recent-work-title h2 {
@@ -106,6 +109,7 @@ main {
   line-height: 32px;
   text-align: center;
   margin-top: 16px;
+  color: #172b4d;
 }
 
 .card-tags {
@@ -156,14 +160,12 @@ main {
 }
 
 .about-template {
-  background-image:
-    url("images/about-me-up.png"),
-    url("images/about-me-bot.png");
-  background-repeat: no-repeat;
-  background-size: auto, auto;
-  background-position-x: right;
-  background-position-y: 20px;
-  padding-top: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -174,18 +176,22 @@ main {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  color: #172b4d;
+
 }
 
-.about-template p {
+.about-me p {
   margin-top: 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
+  color: #42526e;
+
 }
 
-.about-template button {
+.about-me button {
   background-color: #36b37f;
   font-style: normal;
   font-weight: 500;
@@ -197,11 +203,11 @@ main {
   border-radius: 4px;
 }
 
-.about-template button:hover {
+.about-me button:hover {
   box-shadow: 5px 10px 8px #888;
 }
 
-.about-template button:active {
+.about-me button:active {
   background-color: #007443;
   color: #fff;
 }
@@ -458,6 +464,17 @@ main {
   .card6 {
     margin-top: 24px;
   }
+  
+  .about-me {
+    background-image:
+    url("images/about-me-up.png"),
+    url("images/about-me-bot.png");
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    background-position-x: right, left;
+    background-position-y: top, bottom;
+    padding-top: 68px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -534,5 +551,20 @@ main {
     grid-template-rows: auto;
     gap: 32px 24px; 
     margin: 52px auto 5px auto;
+  }
+
+  .about-me {
+    background-image:
+    url("images/about-me-desktop-left.png"),
+    url("images/about-me-desktop-rigth.png");
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    background-position-x: left, right;
+    background-position-y: bottom, top;
+    padding-top: 90px;
+  }
+
+  .about-me p{
+    width: 60%;
   }
 }
