@@ -134,6 +134,10 @@ main {
   background-color: #36b37f;
 }
 
+.card form {
+  text-align: center;
+}
+
 .see-project-btn {
   width: 122px;
   background-color: #36b37f;
@@ -145,10 +149,6 @@ main {
   padding-bottom: 12px;
   margin: 29px auto 24px;
   border-radius: 4px;
-}
-
-.see-project-btn a{
-  text-decoration: none;
   color: #ffff;
 }
 
