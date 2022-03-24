@@ -212,14 +212,6 @@ main {
   color: #fff;
 }
 
-.about-cards {
-  display: grid;
-  grid-template-columns: 327px;
-  grid-template-rows: repeat(3, auto);
-  justify-content: center;
-  margin-top: 65px;
-}
-
 .about-cards img {
   margin-top: 20px;
 }
@@ -271,11 +263,6 @@ main {
 
 .tag-element-about:hover {
   background-color: #555;
-}
-
-.card-about-two,
-.card-about-three {
-  margin-top: 25px;
 }
 
 .about-other-tags {
@@ -475,6 +462,19 @@ main {
     background-position-y: top, bottom;
     padding-top: 68px;
   }
+
+  .about-cards {
+    display: grid;
+    grid-template-columns: 327px;
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    margin-top: 65px;
+  }
+
+  .card-about-two,
+  .card-about-three {
+    margin-top: 25px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -566,5 +566,15 @@ main {
 
   .about-me p{
     width: 60%;
+  }
+
+  .about-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    margin-top: 65px;
+    column-gap: 25px;
+    row-gap: 20px;
+    width: 80%;
   }
 }
