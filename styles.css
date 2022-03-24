@@ -65,14 +65,6 @@ main {
   padding: 8px;
 }
 
-.recent-projects {
-  margin-top: 22px;
-  display: grid;
-  grid-template-columns: 327px;
-  grid-template-rows: repeat(7, auto);
-  justify-content: center;
-}
-
 .recent-work-title {
   display: flex;
   flex-direction: column;
@@ -100,18 +92,6 @@ main {
   flex-direction: column;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
-}
-
-.card1 {
-  margin-top: 62px;
-}
-
-.card2,
-.card3,
-.card4,
-.card5,
-.card6 {
-  margin-top: 24px;
 }
 
 .image-card-holder {
@@ -458,6 +438,26 @@ main {
   .supporting-text {
     line-height: 28px;
   }
+
+  .recent-projects {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: 327px;
+    grid-template-rows: repeat(7, auto);
+    justify-content: center;
+  }
+
+  .card1 {
+    margin-top: 62px;
+  }
+  
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    margin-top: 24px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -514,5 +514,25 @@ main {
     background-size: cover;
     background-position: center;
     height: 1000px;
+  }
+
+  .recent-projects {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  .recent-work-title h2 br,
+  .green-line{
+    display: none;
+  }
+
+  .card-work-row{
+    width: 80%;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 32px 24px; 
+    margin: 52px auto 5px auto;
   }
 }
