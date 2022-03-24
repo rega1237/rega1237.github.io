@@ -507,4 +507,12 @@ main {
     margin: 24px auto 34px auto;
     line-height: 32px;
   }
+
+  .presentation{
+    background-image: url("images/Header-llustration-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+  }
 }
