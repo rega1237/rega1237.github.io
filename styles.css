@@ -15,26 +15,18 @@ main {
   margin: 0 auto;
 }
 
-.presentation {
-  background-image: url("images/header-illsutration-mobile@2x.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+.presentation{
   display: flex;
   flex-direction: column;
 }
 
 .introduction,
 .introduction-second-part {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
   text-align: center;
 }
 
 .introduction {
   color: #172b4d;
-  padding-top: 60px;
 }
 
 .introduction-second-part {
@@ -45,7 +37,6 @@ main {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
   text-align: center;
   margin: 54px 24px 0 24px;
 }
@@ -445,6 +436,28 @@ main {
     width: 30px;
     margin-right: 36px;
   }
+
+  .presentation {
+    background-image: url("images/header-illsutration-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .introduction,
+  .introduction-second-part {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  }
+
+  .introduction{
+    padding-top: 110px;
+  }
+
+  .supporting-text {
+    line-height: 28px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -471,5 +484,27 @@ main {
   .nav-bar-desktop ul a{
     text-decoration: none;
     color: #172b4d;
+  }
+
+  .introduction {
+    margin-top: 145px;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    padding-top: 80px;
+  }
+
+  .introduction-second-part {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 0.37px
+  }
+
+  .supporting-text{
+    width: 770px;
+    margin: 24px auto 34px auto;
+    line-height: 32px;
   }
 }
