@@ -11,59 +11,22 @@ body {
 }
 
 main {
-  width: 375px;
+  width: 100%;
   margin: 0 auto;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 0 20px 0;
-}
-
-header a {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  color: #28352f;
-  margin-left: 24px;
-  text-decoration: none;
-}
-
-.nav-bar div {
-  height: 2px;
-  background-color: #050505;
-  margin: 5px;
-  border-radius: 25px;
-}
-
-.nav-bar {
-  width: 30px;
-  margin-right: 36px;
-}
-
 .presentation {
-  background-image: url("images/header-illsutration-mobile@2x.png");
-  background-repeat: no-repeat;
-  background-size: contain;
   display: flex;
   flex-direction: column;
 }
 
 .introduction,
 .introduction-second-part {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
   text-align: center;
 }
 
 .introduction {
   color: #172b4d;
-  padding-top: 60px;
 }
 
 .introduction-second-part {
@@ -74,9 +37,8 @@ header a {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
   text-align: center;
-  margin: 54px 24px 0 24px;
+  color: #42526e;
 }
 
 .icon-social {
@@ -103,19 +65,12 @@ header a {
   padding: 8px;
 }
 
-.recent-projects {
-  margin-top: 22px;
-  display: grid;
-  grid-template-columns: 327px;
-  grid-template-rows: repeat(7, auto);
-  justify-content: center;
-}
-
 .recent-work-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: #172b4d;
 }
 
 .recent-work-title h2 {
@@ -140,18 +95,6 @@ header a {
   border-radius: 8px;
 }
 
-.card1 {
-  margin-top: 62px;
-}
-
-.card2,
-.card3,
-.card4,
-.card5,
-.card6 {
-  margin-top: 24px;
-}
-
 .image-card-holder {
   height: 252px;
   background-color: #ebf0ee;
@@ -164,6 +107,7 @@ header a {
   line-height: 32px;
   text-align: center;
   margin-top: 16px;
+  color: #172b4d;
 }
 
 .card-tags {
@@ -190,6 +134,10 @@ header a {
   background-color: #36b37f;
 }
 
+.card form {
+  text-align: center;
+}
+
 .see-project-btn {
   width: 122px;
   background-color: #36b37f;
@@ -197,11 +145,11 @@ header a {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #ffff;
   padding-top: 12px;
   padding-bottom: 12px;
-  margin: 29px auto 24px auto;
+  margin: 29px auto 24px;
   border-radius: 4px;
+  color: #ffff;
 }
 
 .see-project-btn:hover {
@@ -214,14 +162,12 @@ header a {
 }
 
 .about-template {
-  background-image:
-    url("images/about-me-up.png"),
-    url("images/about-me-bot.png");
-  background-repeat: no-repeat;
-  background-size: auto, auto;
-  background-position-x: right;
-  background-position-y: 20px;
-  padding-top: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,18 +178,20 @@ header a {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  color: #172b4d;
 }
 
-.about-template p {
+.about-me p {
   margin-top: 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
+  color: #42526e;
 }
 
-.about-template button {
+.about-me button {
   background-color: #36b37f;
   font-style: normal;
   font-weight: 500;
@@ -251,25 +199,17 @@ header a {
   line-height: 24px;
   color: #ffff;
   padding: 12px;
-  margin: 29px auto 24px auto;
+  margin: 29px auto 24px;
   border-radius: 4px;
 }
 
-.about-template button:hover {
+.about-me button:hover {
   box-shadow: 5px 10px 8px #888;
 }
 
-.about-template button:active {
+.about-me button:active {
   background-color: #007443;
   color: #fff;
-}
-
-.about-cards {
-  display: grid;
-  grid-template-columns: 327px;
-  grid-template-rows: repeat(3, auto);
-  justify-content: center;
-  margin-top: 65px;
 }
 
 .about-cards img {
@@ -325,11 +265,6 @@ header a {
   background-color: #555;
 }
 
-.card-about-two,
-.card-about-three {
-  margin-top: 25px;
-}
-
 .about-other-tags {
   margin-top: 24px;
 }
@@ -345,31 +280,6 @@ header a {
   justify-content: center;
   row-gap: 8px;
   column-gap: 8px;
-}
-
-.form-contact {
-  background-image: url(images/form-frame.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position-x: right;
-  background-position-y: 730px;
-}
-
-.text-contact {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  margin: 60px 24px 30px 24px;
-}
-
-.form-contact form {
-  margin: 0 auto;
-  width: 327px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .input-form {
@@ -405,7 +315,6 @@ header a {
   line-height: 24px;
   color: #ffff;
   padding: 12px;
-  margin: 24px 94px;
   border-radius: 4px;
 }
 
@@ -418,25 +327,304 @@ header a {
   color: #fff;
 }
 
-#footer-icons {
-  margin-top: 30px;
+@media only screen and (max-width: 767px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  .mobile-header a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #28352f;
+    margin-left: 24px;
+    text-decoration: none;
+  }
+
+  .nav-bar-mobile div {
+    height: 2px;
+    background-color: #050505;
+    margin: 5px;
+    border-radius: 25px;
+  }
+
+  .nav-bar-mobile {
+    width: 30px;
+    margin-right: 36px;
+  }
+
+  .presentation {
+    background-image: url("images/header-illsutration-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .introduction,
+  .introduction-second-part {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .introduction {
+    padding-top: 110px;
+  }
+
+  .supporting-text {
+    line-height: 28px;
+    margin: 54px 24px 0;
+  }
+
+  .recent-projects {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: 327px;
+    grid-template-rows: repeat(7, auto);
+    justify-content: center;
+  }
+
+  .card1 {
+    margin-top: 62px;
+  }
+
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    margin-top: 24px;
+  }
+
+  .about-me {
+    background-image:
+      url("images/about-me-up.png"),
+      url("images/about-me-bot.png");
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    background-position-x: right, left;
+    background-position-y: top, bottom;
+    padding-top: 68px;
+  }
+
+  .about-cards {
+    display: grid;
+    grid-template-columns: 327px;
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    margin-top: 65px;
+  }
+
+  .card-about-two,
+  .card-about-three {
+    margin-top: 25px;
+  }
+
+  .form-contact {
+    background-image: url("images/form-frame.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: right;
+    background-position-y: bottom;
+  }
+
+  .text-contact {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    margin: 60px 24px 30px;
+  }
+
+  .form-contact form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-page div {
+    height: 5px;
+    background-color: #050505;
+    margin: 0 auto;
+    border-radius: 25px;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .footer-page p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 19px;
+    padding-bottom: 100px;
+  }
+
+  .contact-btn {
+    margin: 24px 94px;
+  }
+
+  #footer-icons {
+    margin-top: 30px;
+  }
 }
 
-.form-contact p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  text-align: center;
-  margin-top: 19px;
-  padding-bottom: 100px;
-}
+@media only screen and (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
 
-.form-contact div {
-  height: 5px;
-  background-color: #050505;
-  margin: 0 auto;
-  border-radius: 25px;
-  width: 100px;
-  margin-bottom: 10px;
+  .nav-bar-desktop ul {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .nav-bar-desktop ul li {
+    padding: 26px 20px;
+  }
+
+  .nav-bar-desktop ul a {
+    text-decoration: none;
+    color: #172b4d;
+  }
+
+  .introduction {
+    margin-top: 145px;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    padding-top: 80px;
+  }
+
+  .introduction-second-part {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  .supporting-text {
+    width: 770px;
+    margin: 24px auto 34px;
+    line-height: 32px;
+  }
+
+  .presentation {
+    background-image: url("images/Header-llustration-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+  }
+
+  .recent-projects {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  .recent-work-title h2 br,
+  .green-line {
+    display: none;
+  }
+
+  .card-work-row {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 32px 24px;
+    margin: 52px auto 5px;
+  }
+
+  .about-me {
+    background-image:
+      url("images/about-me-desktop-left.png"),
+      url("images/about-me-desktop-rigth.png");
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    background-position-x: left, right;
+    background-position-y: bottom, top;
+    padding-top: 90px;
+  }
+
+  .about-me p {
+    width: 60%;
+  }
+
+  .about-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    margin-top: 65px;
+    column-gap: 25px;
+    row-gap: 20px;
+    width: 80%;
+  }
+
+  .form-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 150px;
+    background-image:
+      url("images/frame-left-contact-desktop.png"),
+      url("images/frame-midle-contact.png"),
+      url("images/frame-rigth-contact.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: left, 300px, right;
+    background-position-y: bottom, 500px, bottom;
+  }
+
+  .text-contact {
+    width: 35%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 180px;
+    margin-right: 24px;
+  }
+
+  .form-contact form {
+    margin-top: 100px;
+    width: 43%;
+  }
+
+  .contact-btn {
+    margin-top: 24px;
+  }
+
+  .footer-page p,
+  .footer-page div {
+    display: none;
+  }
+
+  .footer-page #footer-icons {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: solid #dfe1e6;
+  }
 }

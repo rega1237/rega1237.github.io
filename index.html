@@ -8,18 +8,29 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
     </style>
-    <title>Prototype Mobile Portafolio</title>
+    <title>Portafolio</title>
   </head>
 
   <body>
     <main class="container">
       <header>
-        <a href="#">WELCOME</a>
-        <nav class="nav-bar">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </nav>
+        <div class="mobile-header">
+          <a href="#">WELCOME</a>
+          <nav class="nav-bar-mobile">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </nav>
+        </div>
+        <div class="desktop-header">
+          <nav class="nav-bar-desktop">
+            <ul>
+              <li><a href="#">Portafolio</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <section class="presentation">
         <h1 class="introduction">Hey there. I’m Rafael</h1>
@@ -74,7 +85,13 @@
                 <li class="tag-element">html</li>
               </ul>
             </div>
-            <button type="button" class="see-project-btn">See Project</button>
+            <form
+              action="https://github.com/rega1237"
+              method="get"
+              target="_blank"
+            >
+              <button class="see-project-btn">See Project</button>
+            </form>
           </div>
           <div class="card card2">
             <div class="image-card-holder"></div>
@@ -89,7 +106,13 @@
                 <li class="tag-element">html</li>
               </ul>
             </div>
-            <button type="button" class="see-project-btn">See Project</button>
+            <form
+              action="https://github.com/rega1237"
+              method="get"
+              target="_blank"
+            >
+              <button class="see-project-btn">See Project</button>
+            </form>
           </div>
           <div class="card card3">
             <div class="image-card-holder"></div>
@@ -104,7 +127,13 @@
                 <li class="tag-element">html</li>
               </ul>
             </div>
-            <button type="button" class="see-project-btn">See Project</button>
+            <form
+              action="https://github.com/rega1237"
+              method="get"
+              target="_blank"
+            >
+              <button class="see-project-btn">See Project</button>
+            </form>
           </div>
           <div class="card card4">
             <div class="image-card-holder"></div>
@@ -119,7 +148,13 @@
                 <li class="tag-element">html</li>
               </ul>
             </div>
-            <button type="button" class="see-project-btn">See Project</button>
+            <form
+              action="https://github.com/rega1237"
+              method="get"
+              target="_blank"
+            >
+              <button class="see-project-btn">See Project</button>
+            </form>
           </div>
           <div class="card card5">
             <div class="image-card-holder"></div>
@@ -134,7 +169,13 @@
                 <li class="tag-element">html</li>
               </ul>
             </div>
-            <button type="button" class="see-project-btn">See Project</button>
+            <form
+              action="https://github.com/rega1237"
+              method="get"
+              target="_blank"
+            >
+              <button class="see-project-btn">See Project</button>
+            </form>
           </div>
           <div class="card card6">
             <div class="image-card-holder"></div>
@@ -149,19 +190,27 @@
                 <li class="tag-element">html</li>
               </ul>
             </div>
-            <button type="button" class="see-project-btn">See Project</button>
+            <form
+              action="https://github.com/rega1237"
+              method="get"
+              target="_blank"
+            >
+              <button class="see-project-btn">See Project</button>
+            </form>
           </div>
         </div>
       </section>
 
       <section class="about-template">
-        <h2 class="about-title">About me</h2>
-        <p>
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don’t hestiate to contact me.
-        </p>
-        <button type="button">Get My Resume</button>
+        <div class="about-me">
+          <h2 class="about-title">About me</h2>
+          <p>
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+          <button type="button">Get My Resume</button>
+        </div>
         <div class="about-cards">
           <div class="card-about card-about-one">
             <img
@@ -251,6 +300,8 @@
             </li>
           </ul>
         </form>
+      </section>
+      <footer class="footer-page">
         <ul class="icon-social" id="footer-icons">
           <li>
             <img src="images/twitter.png" class="social" alt="twitter logo" />
@@ -278,7 +329,7 @@
         </ul>
         <p>rega1237@gmail.com</p>
         <div></div>
-      </section>
+      </footer>
     </main>
   </body>
 </html>

@@ -1,8 +1,8 @@
 # Contact form pair program
 
-> In this project, We build the contact form for my template. My goal here was to set up and customize the form.
+> In this project, i build the desktop view for my template. My goal here was to configure and customize the desktop view and make it as close as possible to the figma template.
 
-- ![screenshot](images/form-contact.png)
+ ![screenshot](images/desktop-view.png)
 
 ## Built With
 
@@ -29,10 +29,6 @@ To get a local copy up and running follow these simple steps:
 👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/rega1237)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/saifullah767)
 
 ## 🤝 Contributing
 
