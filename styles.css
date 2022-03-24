@@ -15,7 +15,7 @@ main {
   margin: 0 auto;
 }
 
-.presentation{
+.presentation {
   display: flex;
   flex-direction: column;
 }
@@ -38,9 +38,7 @@ main {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
-  margin: 54px 24px 0 24px;
   color: #42526e;
-
 }
 
 .icon-social {
@@ -146,7 +144,7 @@ main {
   color: #ffff;
   padding-top: 12px;
   padding-bottom: 12px;
-  margin: 29px auto 24px auto;
+  margin: 29px auto 24px;
   border-radius: 4px;
 }
 
@@ -177,7 +175,6 @@ main {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-
 }
 
 .about-me p {
@@ -188,7 +185,6 @@ main {
   line-height: 32px;
   text-align: center;
   color: #42526e;
-
 }
 
 .about-me button {
@@ -199,7 +195,7 @@ main {
   line-height: 24px;
   color: #ffff;
   padding: 12px;
-  margin: 29px auto 24px auto;
+  margin: 29px auto 24px;
   border-radius: 4px;
 }
 
@@ -332,14 +328,14 @@ main {
   .desktop-header {
     display: none;
   }
-  
+
   .mobile-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
   }
-  
+
   .mobile-header a {
     font-style: normal;
     font-weight: 600;
@@ -349,14 +345,14 @@ main {
     margin-left: 24px;
     text-decoration: none;
   }
-  
+
   .nav-bar-mobile div {
     height: 2px;
     background-color: #050505;
     margin: 5px;
     border-radius: 25px;
   }
-  
+
   .nav-bar-mobile {
     width: 30px;
     margin-right: 36px;
@@ -370,18 +366,19 @@ main {
 
   .introduction,
   .introduction-second-part {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
   }
 
-  .introduction{
+  .introduction {
     padding-top: 110px;
   }
 
   .supporting-text {
     line-height: 28px;
+    margin: 54px 24px 0;
   }
 
   .recent-projects {
@@ -395,7 +392,7 @@ main {
   .card1 {
     margin-top: 62px;
   }
-  
+
   .card2,
   .card3,
   .card4,
@@ -403,11 +400,11 @@ main {
   .card6 {
     margin-top: 24px;
   }
-  
+
   .about-me {
     background-image:
-    url("images/about-me-up.png"),
-    url("images/about-me-bot.png");
+      url("images/about-me-up.png"),
+      url("images/about-me-bot.png");
     background-repeat: no-repeat;
     background-size: auto, auto;
     background-position-x: right, left;
@@ -429,7 +426,7 @@ main {
   }
 
   .form-contact {
-    background-image: url(images/form-frame.png);
+    background-image: url("images/form-frame.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position-x: right;
@@ -442,7 +439,7 @@ main {
     font-size: 40px;
     line-height: 52px;
     text-align: center;
-    margin: 60px 24px 30px 24px;
+    margin: 60px 24px 30px;
   }
 
   .form-contact form {
@@ -452,7 +449,7 @@ main {
     align-items: center;
   }
 
-  footer div {
+  .footer-page div {
     height: 5px;
     background-color: #050505;
     margin: 0 auto;
@@ -461,7 +458,7 @@ main {
     margin-bottom: 10px;
   }
 
-  footer p {
+  .footer-page p {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -472,20 +469,20 @@ main {
   }
 
   .contact-btn {
-      margin: 24px 94px;
-    }
-    
-    #footer-icons {
-      margin-top: 30px;
-    }
+    margin: 24px 94px;
+  }
+
+  #footer-icons {
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  .mobile-header{
+  .mobile-header {
     display: none;
   }
 
-  .nav-bar-desktop ul{
+  .nav-bar-desktop ul {
     position: absolute;
     width: 100%;
     display: flex;
@@ -497,11 +494,11 @@ main {
     line-height: 32px;
   }
 
-  .nav-bar-desktop ul li{
+  .nav-bar-desktop ul li {
     padding: 26px 20px;
   }
 
-  .nav-bar-desktop ul a{
+  .nav-bar-desktop ul a {
     text-decoration: none;
     color: #172b4d;
   }
@@ -519,16 +516,16 @@ main {
     font-weight: 800;
     font-size: 45px;
     line-height: 60px;
-    letter-spacing: 0.37px
+    letter-spacing: 0.37px;
   }
 
-  .supporting-text{
+  .supporting-text {
     width: 770px;
-    margin: 24px auto 34px auto;
+    margin: 24px auto 34px;
     line-height: 32px;
   }
 
-  .presentation{
+  .presentation {
     background-image: url("images/Header-llustration-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -543,23 +540,23 @@ main {
   }
 
   .recent-work-title h2 br,
-  .green-line{
+  .green-line {
     display: none;
   }
 
-  .card-work-row{
+  .card-work-row {
     width: 80%;
-    display: grid; 
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: auto;
-    gap: 32px 24px; 
-    margin: 52px auto 5px auto;
+    gap: 32px 24px;
+    margin: 52px auto 5px;
   }
 
   .about-me {
     background-image:
-    url("images/about-me-desktop-left.png"),
-    url("images/about-me-desktop-rigth.png");
+      url("images/about-me-desktop-left.png"),
+      url("images/about-me-desktop-rigth.png");
     background-repeat: no-repeat;
     background-size: auto, auto;
     background-position-x: left, right;
@@ -567,7 +564,7 @@ main {
     padding-top: 90px;
   }
 
-  .about-me p{
+  .about-me p {
     width: 60%;
   }
 
@@ -587,17 +584,17 @@ main {
     justify-content: center;
     margin: auto;
     padding-bottom: 150px;
-    background-image: 
-    url(images/frame-left-contact-desktop.png),
-    url(images/frame-midle-contact.png),
-    url(images/frame-rigth-contact.png);
+    background-image:
+      url("images/frame-left-contact-desktop.png"),
+      url("images/frame-midle-contact.png"),
+      url("images/frame-rigth-contact.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position-x: left, 300px, right;
-    background-position-y:bottom, 500px, bottom;
+    background-position-y: bottom, 500px, bottom;
   }
 
-  .text-contact{
+  .text-contact {
     width: 35%;
     font-style: normal;
     font-weight: 700;
@@ -617,14 +614,14 @@ main {
     margin-top: 24px;
   }
 
-  footer p,
-  footer div {
+  .footer-page p,
+  .footer-page div {
     display: none;
   }
 
-  footer #footer-icons{
+  .footer-page #footer-icons {
     padding-top: 25px;
     padding-bottom: 25px;
-    border-top: solid #dfe1e6
+    border-top: solid #dfe1e6;
   }
 }
