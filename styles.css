@@ -282,31 +282,6 @@ main {
   column-gap: 8px;
 }
 
-.form-contact {
-  background-image: url(images/form-frame.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position-x: right;
-  background-position-y: 730px;
-}
-
-.text-contact {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  margin: 60px 24px 30px 24px;
-}
-
-.form-contact form {
-  margin: 0 auto;
-  width: 327px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .input-form {
   list-style: none;
 }
@@ -475,6 +450,30 @@ main {
   .card-about-three {
     margin-top: 25px;
   }
+
+  .form-contact {
+    background-image: url(images/form-frame.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: right;
+    background-position-y: 730px;
+  }
+
+  .text-contact {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    margin: 60px 24px 30px 24px;
+  }
+
+  .form-contact form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -576,5 +575,37 @@ main {
     column-gap: 25px;
     row-gap: 20px;
     width: 80%;
+  }
+
+  .form-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .text-contact{
+    width: 35%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 180px;
+    margin-right: 24px;
+  }
+
+  .form-contact form {
+    margin-top: 100px;
+    width: 40%;
+  }
+
+  .form-contact p,
+  .form-contact div {
+    display: none;
+  }
+
+  .contact-btn {
+    margin-top: 24px;
   }
 }
