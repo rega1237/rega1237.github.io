@@ -141,11 +141,15 @@ main {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #ffff;
   padding-top: 12px;
   padding-bottom: 12px;
   margin: 29px auto 24px;
   border-radius: 4px;
+}
+
+.see-project-btn a{
+  text-decoration: none;
+  color: #ffff;
 }
 
 .see-project-btn:hover {
@@ -311,7 +315,6 @@ main {
   line-height: 24px;
   color: #ffff;
   padding: 12px;
-  margin: 24px 94px;
   border-radius: 4px;
 }
 
@@ -607,7 +610,7 @@ main {
 
   .form-contact form {
     margin-top: 100px;
-    width: 40%;
+    width: 43%;
   }
 
   .contact-btn {
