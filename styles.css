@@ -328,29 +328,6 @@ main {
   color: #fff;
 }
 
-#footer-icons {
-  margin-top: 30px;
-}
-
-.form-contact p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  text-align: center;
-  margin-top: 19px;
-  padding-bottom: 100px;
-}
-
-.form-contact div {
-  height: 5px;
-  background-color: #050505;
-  margin: 0 auto;
-  border-radius: 25px;
-  width: 100px;
-  margin-bottom: 10px;
-}
-
 @media only screen and (max-width: 767px) {
   .desktop-header {
     display: none;
@@ -456,7 +433,7 @@ main {
     background-repeat: no-repeat;
     background-size: auto;
     background-position-x: right;
-    background-position-y: 730px;
+    background-position-y: bottom;
   }
 
   .text-contact {
@@ -474,6 +451,33 @@ main {
     flex-direction: column;
     align-items: center;
   }
+
+  footer div {
+    height: 5px;
+    background-color: #050505;
+    margin: 0 auto;
+    border-radius: 25px;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  footer p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 19px;
+    padding-bottom: 100px;
+  }
+
+  .contact-btn {
+      margin: 24px 94px;
+    }
+    
+    #footer-icons {
+      margin-top: 30px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -582,6 +586,15 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+    padding-bottom: 150px;
+    background-image: 
+    url(images/frame-left-contact-desktop.png),
+    url(images/frame-midle-contact.png),
+    url(images/frame-rigth-contact.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: left, 300px, right;
+    background-position-y:bottom, 500px, bottom;
   }
 
   .text-contact{
@@ -600,12 +613,18 @@ main {
     width: 40%;
   }
 
-  .form-contact p,
-  .form-contact div {
+  .contact-btn {
+    margin-top: 24px;
+  }
+
+  footer p,
+  footer div {
     display: none;
   }
 
-  .contact-btn {
-    margin-top: 24px;
+  footer #footer-icons{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: solid #dfe1e6
   }
 }
