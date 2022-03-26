@@ -513,6 +513,9 @@ main {
     line-height: 60px;
     letter-spacing: 0.37px;
     padding-top: 80px;
+    opacity: 0;
+    animation: fadeIn linear 3s;
+    animation-fill-mode: forwards;
   }
 
   .introduction-second-part {
@@ -520,12 +523,30 @@ main {
     font-size: 45px;
     line-height: 60px;
     letter-spacing: 0.37px;
+    animation: fadeIn linear 2s;
+    opacity: 0;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
   }
 
   .supporting-text {
     width: 770px;
     margin: 24px auto 34px;
     line-height: 32px;
+    animation: fadeIn linear 2s;
+    opacity: 0;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 100;
+    }
   }
 
   .presentation {
@@ -626,5 +647,24 @@ main {
     padding-top: 25px;
     padding-bottom: 25px;
     border-top: solid #dfe1e6;
+  }
+
+  .btn:hover {
+    animation: rotateBtn 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rotateBtn {
+    0% {
+      transform: rotate(25deg);
+    }
+
+    50% {
+      transform: rotate(-25deg);
+    }
+
+    100% {
+      transform: rotate(25deg);
+    }
   }
 }
