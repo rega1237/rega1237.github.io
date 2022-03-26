@@ -656,3 +656,23 @@ main {
     opacity: 100;
   }
 }
+
+.btn:hover {
+  animation: rotateBtn 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotateBtn {
+  0%{
+    transform: rotate(25deg);
+  }
+  
+  50%{
+    transform: rotate(-25deg);
+  }
+
+  100%{
+    transform: rotate(25deg);
+  }
+}
+
