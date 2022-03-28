@@ -1,6 +1,8 @@
-# Contact form pair program
+Live link to the project: https://rega1237.github.io/
 
-> In this project, i build the desktop view for my template. My goal here was to configure and customize the desktop view and make it as close as possible to the figma template.
+# Deploy my portafolio to github page
+
+> In this project, i deploy my portafolio. My goal here was to configure my repo and upload with gitup page
 
  ![screenshot](images/desktop-view.png)
 
