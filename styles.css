@@ -30,7 +30,7 @@ main {
 }
 
 .introduction-second-part {
-  color: #40bb82;
+  color: #206047;
 }
 
 .supporting-text {
@@ -252,7 +252,7 @@ main {
 .tag-element-about {
   padding: 12px;
   background-color: #fff;
-  color: #36b37e;
+  color: #1d5d28;
   border-radius: 4px;
   font-style: normal;
   font-weight: 600;
@@ -262,7 +262,8 @@ main {
 }
 
 .tag-element-about:hover {
-  background-color: #555;
+  background-color: #1D5D28;
+  color: #fff;
 }
 
 .about-other-tags {
