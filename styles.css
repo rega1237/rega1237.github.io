@@ -131,7 +131,7 @@ main {
 }
 
 .tag-element:hover {
-  background-color: #36b37f;
+  background-color: #368449;
 }
 
 .card form {
@@ -140,7 +140,7 @@ main {
 
 .see-project-btn {
   width: 122px;
-  background-color: #36b37f;
+  background-color: #366049;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -192,7 +192,7 @@ main {
 }
 
 .about-me button {
-  background-color: #36b37f;
+  background-color: #366049;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -252,7 +252,7 @@ main {
 .tag-element-about {
   padding: 12px;
   background-color: #fff;
-  color: #36b37e;
+  color: #36ad49;
   border-radius: 4px;
   font-style: normal;
   font-weight: 600;
@@ -262,7 +262,7 @@ main {
 }
 
 .tag-element-about:hover {
-  background-color: #555;
+  background-color: #000;
 }
 
 .about-other-tags {
@@ -308,7 +308,7 @@ main {
 }
 
 .contact-btn {
-  background-color: #36b37f;
+  background-color: #366049;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
