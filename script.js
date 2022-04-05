@@ -1,3 +1,4 @@
+const mobileElement = document.getElementById('mobile-links');
 const menuBtn = document.querySelector('.nav-bar-mobile');
 menuBtn.addEventListener('click', () => {
     if (mobileElement.style.display === "block") {
