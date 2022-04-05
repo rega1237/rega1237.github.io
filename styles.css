@@ -15,6 +15,10 @@ main {
   margin: 0 auto;
 }
 
+#mobile-links {
+  display: none;
+}
+
 .presentation {
   display: flex;
   flex-direction: column;
@@ -359,6 +363,62 @@ main {
   .nav-bar-mobile {
     width: 30px;
     margin-right: 36px;
+  }
+
+  .open .line-two {
+    background: transparent;
+    transform: translateX(-50px);
+  }
+
+  .open {
+    position: fixed;
+    top: 40px;
+    right: 0;
+    z-index: 2;
+  }
+
+  .open .line-one {
+    transform: rotate(45deg) translateY(10px);
+    background-color: #67798e;
+    width: 20px;
+  }
+
+  .open .line-three {
+    transform: rotate(-45deg) translateY(-10px);
+    background-color: #67798e;
+    width: 20px;
+  }
+
+  #mobile-links {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: #ffff;
+    padding: 20px 0;
+    line-height: 30px;
+  }
+
+  #mobile-links ul {
+    padding-top: 50px;
+  }
+
+  #mobile-links li {
+    margin-left: 25px;
+    list-style: none;
+  }
+
+  #mobile-links a {
+    text-decoration: none;
+    color: #3a4a42;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .list-margin {
+    margin-top: 40px;
   }
 
   .presentation {
