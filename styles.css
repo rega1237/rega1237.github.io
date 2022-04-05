@@ -401,8 +401,6 @@ main {
   }
 
   #mobile-links ul {
-    display: flexbox;
-    flex-direction: column;
     padding-top: 50px;
   }
 
