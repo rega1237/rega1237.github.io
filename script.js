@@ -21,3 +21,14 @@ menuBtn.addEventListener('click', () => {
         menuOpen = false; 
     }
 });
+mobileElement.addEventListener('click', () => {
+    if(mobileElement.style.display === "block"){
+        mobileElement.style.display = "none";
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+    } else {
+        mobileElement.style.display = "block";
+        menuBtn.classList.add('open');
+        menuOpen = true;
+    }
+});
