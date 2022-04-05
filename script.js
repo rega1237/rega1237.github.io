@@ -7,7 +7,7 @@ menuBtn.addEventListener('click', () => {
     mobileElement.style.display = 'none';
   } else {
     mobileElement.style.display = 'block';
-    }
+  }
 });
 
 menuBtn.addEventListener('click', () => {
