@@ -147,6 +147,20 @@ const cards = [
     }
   }
 
+  const popUp = document.querySelector('.pop-up');
+const buttonProject = document.querySelectorAll('.see-project-btn');
+for (let i = 0; i <= buttonProject.length - 1; i += 1) {
+  buttonProject[i].addEventListener('click', () => {
+    if (popUp.style.display === 'block') {
+      popUp.style.display = 'none';
+    } else {
+      popUp.style.display = 'block';
+    }
+  });
+}
+const divPopProjectDesktop = document.createElement('div');
+const divPopProject = document.createElement('div');
+
 
 
 
