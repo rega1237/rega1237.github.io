@@ -162,8 +162,147 @@ const divPopProjectDesktop = document.createElement('div');
 const divPopProject = document.createElement('div');
 
 
+function popupwindow() {
+  const divCloseBtnDesktop = document.createElement('div');
+  const closeBtnDesktop = document.createElement('img');
+  divPopProjectDesktop.className = 'project-container-desktop';
+  divCloseBtnDesktop.className = 'close-button-cont';
+  closeBtnDesktop.classList = 'close-btn';
+  closeBtnDesktop.src = 'images/disablebutton.png';
+  popUp.append(divPopProjectDesktop);
+  divCloseBtnDesktop.append(closeBtnDesktop);
+  divPopProjectDesktop.append(divCloseBtnDesktop);
 
+  closeBtnDesktop.addEventListener('click', () => {
+    if (popUp.style.display === 'block') {
+      popUp.style.display = 'none';
+    }
+  });
 
+  // Project Content DESKTOP
+
+  const projectsDesktop = {
+    img: ['images/project-desktop.png', 'image-project-holder'],
+    titleProject: 'Keeping track of hundreds of components',
+    technologies: ['Codekit', 'Github', 'Bootstrap', 'JavaScript', 'Terminal', 'Codepen'],
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+    unknown printer took a galley of type and scrambled it 1960s with the releaLorem 
+        Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+        has been the industry's standard dummy text ever since the 1500s, when an unknown 
+        printer took a galley of type and scrambled it 1960s with the relea`,
+    buttonProject: [
+      {
+        text: ['See Live', 'See Source'],
+      },
+      { icon: ['images/see-live.png', 'images/see-source.png'] },
+    ],
+  };
+
+  const { img } = projectsDesktop;
+  const [imgOne, imgTwo] = img;
+
+  const imgProjectHolderDesktop = document.createElement('div');
+  const imgProjectDesktop = document.createElement('img');
+  const divTitleBtnDesktop = document.createElement('div');
+  const titleProjectDesktop = document.createElement('h3');
+  const titleProjectTextDesktop = document.createTextNode(
+    projectsDesktop.titleProject,
+  );
+  const divProjectTagsDesktop = document.createElement('div');
+  const ulListDesktop = document.createElement('ul');
+  const projectDescriptionDesktop = document.createElement('p');
+  const projectDescriptionTextDesktop = document.createTextNode(
+    projectsDesktop.description,
+  );
+  const divProjectBtnDesktop = document.createElement('div');
+  imgProjectHolderDesktop.className = imgTwo;
+  imgProjectDesktop.src = imgOne;
+  divTitleBtnDesktop.className = 'title-btns';
+  divProjectTagsDesktop.className = 'project-tags';
+  divProjectBtnDesktop.className = 'project-buttons-container';
+
+  divPopProjectDesktop.append(imgProjectHolderDesktop);
+  imgProjectHolderDesktop.append(imgProjectDesktop);
+  titleProjectDesktop.append(titleProjectTextDesktop);
+  divTitleBtnDesktop.append(titleProjectDesktop);
+  divTitleBtnDesktop.append(divProjectBtnDesktop);
+  divPopProjectDesktop.append(divTitleBtnDesktop);
+  divPopProjectDesktop.append(divProjectTagsDesktop);
+  divProjectTagsDesktop.append(ulListDesktop);
+  projectDescriptionDesktop.append(projectDescriptionTextDesktop);
+  divPopProjectDesktop.append(projectDescriptionDesktop);
+
+  for (let i = 0; i <= projectsDesktop.technologies.length - 1; i += 1) {
+    const projectTech = document.createElement('li');
+    const projectTechText = document.createTextNode(
+      projectsDesktop.technologies[i],
+    );
+    projectTech.className = 'tag-element';
+    projectTech.append(projectTechText);
+    ulListDesktop.append(projectTech);
+  }
+
+  for (let i = 0; i <= projectsDesktop.buttonProject.length - 1; i += 1) {
+    const btnProject = document.createElement('button');
+    const textBtnCont = document.createElement('span');
+    const iconBtnCont = document.createElement('span');
+    const iconImg = document.createElement('img');
+    const textBtn = document.createTextNode(
+      projectsDesktop.buttonProject[0].text[i],
+    );
+    const redirectBtn = document.createElement('form');
+ 
+    if (
+      `${projectsDesktop.buttonProject[1].icon[i]}`
+        === 'images/see-live.png'
+    ) {
+      iconImg.className = 'liveIcon';
+      btnProject.className = 'project-btn';
+    } else {
+      iconImg.className = 'sourceIcon';
+      btnProject.className = 'project-btn source-btn';
+    }
+
+    iconImg.src = `${projectsDesktop.buttonProject[1].icon[i]}`;
+
+    
+    if (btnProject.classList.contains('source-btn')){
+      redirectBtn.setAttribute('action', 'https://github.com/rega1237/rega1237.github.io');
+      redirectBtn.setAttribute('method', 'get');
+      redirectBtn.setAttribute('target', '_blank');
+      redirectBtn.append(btnProject)
+    }else{
+      redirectBtn.setAttribute('action', 'https://rega1237.github.io/');
+      redirectBtn.setAttribute('method', 'get');
+      redirectBtn.setAttribute('target', '_blank');
+      redirectBtn.append(btnProject);
+    }
+    divProjectBtnDesktop.append(redirectBtn);
+    textBtnCont.append(textBtn);
+    iconBtnCont.append(iconImg);
+    btnProject.append(textBtnCont);
+    btnProject.append(iconBtnCont);
+  }
+
+  const divCloseBtn = document.createElement('div');
+  const closeBtn = document.createElement('img');
+  divPopProject.className = 'project-container';
+  divCloseBtn.className = 'close-button-cont';
+  closeBtn.classList = 'close-btn';
+  closeBtn.src = 'images/disablebutton.png';
+  popUp.append(divPopProject);
+  divCloseBtn.append(closeBtn);
+  divPopProject.append(divCloseBtn);
+
+  closeBtn.addEventListener('click', () => {
+    if (popUp.style.display === 'block') {
+      popUp.style.display = 'none';
+    }
+  });
+}
+
+window.addEventListener('load', popupwindow);
 
 
 
