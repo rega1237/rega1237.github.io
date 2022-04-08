@@ -434,8 +434,7 @@ main {
 }
 
 @media only screen and (max-width: 767px) {
-  .desktop-header,
-  .project-container-desktop {
+  .desktop-header {
     display: none;
   }
 
@@ -495,7 +494,6 @@ main {
   #mobile-links {
     width: 100%;
     height: 100vh;
-    display: none;
     position: fixed;
     top: 0;
     background-color: #ffff;
@@ -555,8 +553,10 @@ main {
     justify-content: center;
   }
 
-  .card1 {
+  .card-work-row {
     margin-top: 62px;
+    display: flex;
+    flex-direction: column;
   }
 
   .card2,
@@ -641,6 +641,20 @@ main {
 
   #footer-icons {
     margin-top: 30px;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+
+  .image-project-holder img {
+    width: 90%;
+  }
+
+  .project-container-desktop {
+    display: none;
   }
 }
 
