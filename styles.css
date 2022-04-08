@@ -394,15 +394,13 @@ main {
     height: 100vh;
     display: none;
     position: fixed;
-    top: 0px;
+    top: 0;
     background-color: #ffff;
-    padding: 20px 0px;
+    padding: 20px 0;
     line-height: 30px;
   }
 
   #mobile-links ul {
-    display: flexbox;
-    flex-direction: column;
     padding-top: 50px;
   }
 
@@ -411,7 +409,7 @@ main {
     list-style: none;
   }
 
-  #mobile-links a{
+  #mobile-links a {
     text-decoration: none;
     color: #3a4a42;
     font-weight: 600;
@@ -419,7 +417,7 @@ main {
     line-height: 44px;
   }
 
-  .list-margin{
+  .list-margin {
     margin-top: 40px;
   }
 
