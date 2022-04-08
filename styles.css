@@ -460,7 +460,8 @@ main {
   .card3,
   .card4,
   .card5,
-  .card6 {
+  .card6,
+  .card-below {
     margin-top: 24px;
   }
 
