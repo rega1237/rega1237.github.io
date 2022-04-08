@@ -300,7 +300,101 @@ function popupwindow() {
       popUp.style.display = 'none';
     }
   });
+  // Project Content Mobile
+  const projectsMobile = {
+    imgM: ['images/mobile-popup.png', 'image-project-holder'],
+    titleProject: 'Keeping track of hundreds of components',
+    technologies: ['Ruby on rails', 'css', 'JavaScript'],
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+    unknown printer took a galley of type and scrambled it 1960s with the releaLorem
+        Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industry's standard dummy text ever since the 1500s, when an unknown
+        printer took a galley of type and scrambled it 1960s with the relea`,
+    buttonProject: [
+      {
+        text: ['See Live', 'See Source'],
+      },
+      { icon: ['images/see-live.png', 'images/see-source.png'] },
+    ],
+  };
+  const imgProjectHolder = document.createElement('div');
+  const imgProject = document.createElement('img');
+  const titleProject = document.createElement('h3');
+  const titleProjectText = document.createTextNode(
+    projectsMobile.titleProject,
+  );
+  const divProjectTags = document.createElement('div');
+  const ulList = document.createElement('ul');
+  const projectDescription = document.createElement('p');
+  const projectDescriptionText = document.createTextNode(
+    projectsMobile.description,
+  );
+  const divProjectBtn = document.createElement('div');
+  const redirectBtn = document.createElement('form');
+  const { imgM } = projectsMobile;
+  const [imgOneM, imgTwoM] = imgM;
+  imgProjectHolder.className = imgTwoM;
+  imgProject.src = imgOneM;
+  divProjectTags.className = 'project-tags';
+  divProjectBtn.className = 'project-buttons-container';
+  divPopProject.append(imgProjectHolder);
+  imgProjectHolder.append(imgProject);
+  divPopProject.append(titleProject);
+  titleProject.append(titleProjectText);
+  divPopProject.append(divProjectTags);
+  divProjectTags.append(ulList);
+  projectDescription.append(projectDescriptionText);
+  divPopProject.append(projectDescription);
+  divPopProject.append(divProjectBtn);
+  for (let i = 0; i <= projectsMobile.technologies.length - 1; i += 1) {
+    const projectTech = document.createElement('li');
+    const projectTechText = document.createTextNode(
+      projectsMobile.technologies[i],
+    );
+    projectTech.className = 'tag-element';
+    projectTech.append(projectTechText);
+    ulList.append(projectTech);
+  }
+  for (let i = 0; i <= projectsMobile.buttonProject.length - 1; i += 1) {
+    const btnProject = document.createElement('button');
+    const textBtnCont = document.createElement('span');
+    const iconBtnCont = document.createElement('span');
+    const iconImg = document.createElement('img');
+    const textBtn = document.createTextNode(
+      projectsMobile.buttonProject[0].text[i],
+    );
+    const redirectBtn = document.createElement('form');
+    if (
+      `${projectsMobile.buttonProject[1].icon[i]}`
+        === 'images/see-live.png'
+    ) {
+      iconImg.className = 'liveIcon';
+      btnProject.className = 'project-btn';
+    } else {
+      iconImg.className = 'sourceIcon';
+      btnProject.className = 'project-btn source-btn';
+    }
+    iconImg.src = `${projectsMobile.buttonProject[1].icon[i]}`;
+    if (btnProject.classList.contains('source-btn')){
+      redirectBtn.setAttribute('action', 'https://github.com/rega1237/rega1237.github.io');
+      redirectBtn.setAttribute('method', 'get');
+      redirectBtn.setAttribute('target', '_blank');
+      redirectBtn.append(btnProject)
+    }else{
+      redirectBtn.setAttribute('action', 'https://rega1237.github.io/');
+      redirectBtn.setAttribute('method', 'get');
+      redirectBtn.setAttribute('target', '_blank');
+      redirectBtn.append(btnProject);
+    }
+    divProjectBtn.append(redirectBtn);
+    textBtnCont.append(textBtn);
+    iconBtnCont.append(iconImg);
+    btnProject.append(textBtnCont);
+    btnProject.append(iconBtnCont);
+  }
 }
+
 
 window.addEventListener('load', popupwindow);
 
