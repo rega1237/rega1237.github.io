@@ -418,3 +418,16 @@ form.addEventListener('submit', (event) => {
     emailLabel.style.display = 'block';
   }
 });
+
+// Local Storage
+
+const fullName = document.getElementById('full-name');
+const textArea = document.getElementById('textarea');
+document.addEventListener('input', () => {
+  const formInputs = {
+    name: fullName.value,
+    email: email.value,
+    textArea: textArea.value,
+  };
+  localStorage.setItem('form', JSON.stringify(formInputs));
+});
