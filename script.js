@@ -431,3 +431,23 @@ document.addEventListener('input', () => {
   };
   localStorage.setItem('form', JSON.stringify(formInputs));
 });
+
+function setValues() {
+  if (localStorage.getItem('form')) {
+    const formInputs = JSON.parse(localStorage.getItem('form'));
+
+    const currentName = formInputs.name;
+    const currentEmail = formInputs.email;
+    const currentTextarea = formInputs.textArea;
+
+    fullName.value = currentName;
+    email.value = currentEmail;
+    textArea.value = currentTextarea;
+  } else {
+    fullName.value = '';
+    email.value = '';
+    textArea.value = '';
+  }
+}
+
+window.addEventListener('load', setValues);
