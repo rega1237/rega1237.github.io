@@ -406,3 +406,16 @@ const form = document.getElementById('template-form');
 const email = document.getElementById('email');
 const emailLabel = document.getElementById('label-email');
 const underCase = /^[a-z0-9_.+-]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (underCase.test(email.value)){
+    form.submit();
+    form.reset();
+    emailLabel.style.display = 'none';
+  }else{
+    emailLabel.style.display = 'block';
+  }
+
+});
