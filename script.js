@@ -418,3 +418,35 @@ form.addEventListener('submit', (event) => {
     emailLabel.style.display = 'block';
   }
 });
+
+// Local Storage
+
+const fullName = document.getElementById('full-name');
+const textArea = document.getElementById('textarea');
+document.addEventListener('input', () => {
+  const formInputs = {
+    name: fullName.value,
+    email: email.value,
+    textArea: textArea.value,
+  };
+  localStorage.setItem('form', JSON.stringify(formInputs));
+});
+
+function setValues() {
+  if (localStorage.getItem('form')) {
+    const formInputs = JSON.parse(localStorage.getItem('form'));
+
+    const currentName = formInputs.name;
+    const currentEmail = formInputs.email;
+    const currentTextarea = formInputs.textArea;
+
+    fullName.value = currentName;
+    email.value = currentEmail;
+    textArea.value = currentTextarea;
+  } else {
+    fullName.value = '';
+    email.value = '';
+    textArea.value = '';
+  }
+}
+window.addEventListener('load', setValues);
