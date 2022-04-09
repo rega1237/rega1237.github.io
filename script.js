@@ -410,12 +410,11 @@ const underCase = /^[a-z0-9_.+-]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  if (underCase.test(email.value)){
+  if (underCase.test(email.value)) {
     form.submit();
     form.reset();
     emailLabel.style.display = 'none';
-  }else{
+  } else {
     emailLabel.style.display = 'block';
   }
-
 });

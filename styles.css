@@ -433,6 +433,13 @@ main {
   margin-top: 02px;
 }
 
+#label-email {
+  color: white;
+  background-color: #ff6163;
+  padding: 5px;
+  display: none;
+}
+
 @media only screen and (max-width: 767px) {
   .desktop-header {
     display: none;
