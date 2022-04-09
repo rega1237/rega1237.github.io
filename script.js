@@ -449,5 +449,4 @@ function setValues() {
     textArea.value = '';
   }
 }
-
 window.addEventListener('load', setValues);
