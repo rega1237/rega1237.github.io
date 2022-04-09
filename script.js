@@ -400,3 +400,9 @@ function popupwindow() {
 }
 
 window.addEventListener('load', popupwindow);
+
+// Email Validation.
+const form = document.getElementById('template-form');
+const email = document.getElementById('email');
+const emailLabel = document.getElementById('label-email');
+const underCase = /^[a-z0-9_.+-]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
